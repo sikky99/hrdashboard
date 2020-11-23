@@ -1,0 +1,248 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+}
+
+.signIn__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #14274e;
+  height: 100vh;
+  width: 100%;
+}
+
+.signIn__section .heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.signIn__section .left__side {
+  width: 50%;
+  height: 100%;
+  background-image: url("../images/signIn.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.signIn__section .left__side:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.signIn__section .left__side h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.signIn__section .left__side p {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.signIn__section .right__side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.signIn__section .right__side .form__content {
+  background: #f1f6f9;
+  width: 550px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 15px -15px black;
+  box-shadow: 0px 10px 15px -15px black;
+}
+
+.signIn__section .right__side .form__content label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.signIn__section .right__side .form__content .form-control {
+  font-size: 1rem;
+  border: 1px solid #14274e !important;
+  background: transparent;
+  padding: 20px 10px !important;
+}
+
+.signIn__section
+  .right__side
+  .form__content
+  .form-control::-webkit-input-placeholder {
+  color: #14274e !important;
+}
+
+.signIn__section
+  .right__side
+  .form__content
+  .form-control:-ms-input-placeholder {
+  color: #14274e !important;
+}
+
+.signIn__section
+  .right__side
+  .form__content
+  .form-control::-ms-input-placeholder {
+  color: #14274e !important;
+}
+
+.signIn__section .right__side .form__content .form-control::placeholder {
+  color: #14274e !important;
+}
+
+.signIn__section .right__side .form__content .password {
+  position: relative;
+}
+
+.signIn__section .right__side .form__content .password #eye_button {
+  position: absolute;
+  right: 20px;
+  top: 70%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signIn__section .right__side .form__content .form-check-label {
+  margin-left: 10px !important;
+}
+
+.signIn__section .right__side .form__content button {
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 8px 20px;
+  background-color: #14274e;
+  border: 0px;
+  color: #f1f6f9;
+  letter-spacing: 1px;
+}
+
+.signIn__section .right__side .form__content p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.signIn__section .right__side .form__content .text {
+  text-align: right;
+}
+
+.signIn__section .right__side .form__content .facebook,
+.signIn__section .right__side .form__content .google {
+  padding: 10px;
+  border: 2px solid #14274e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+  margin: 0px 5px;
+  display: inline-block;
+}
+
+.signIn__section .right__side .form__content .facebook:hover,
+.signIn__section .right__side .form__content .google:hover {
+  text-decoration: none;
+}
+
+.signIn__section .right__side .form__content .facebook i,
+.signIn__section .right__side .form__content .google i {
+  font-size: 1rem;
+  padding: 0px 5px;
+  color: #14274e;
+}
+
+.signIn__section .right__side .form__content .facebook span img,
+.signIn__section .right__side .form__content .google span img {
+  width: 30px;
+}
+
+@media (max-width: 1100px) {
+  .signIn__section .right__side .form__content {
+    width: 440px;
+  }
+  .signIn__section .left__side {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .signIn__section .left__side {
+    display: none;
+  }
+  .signIn__section .right__side {
+    width: 100%;
+  }
+  .signIn__section .right__side .form__content {
+    background: #f1f6f9;
+    width: 430px;
+    padding: 40px 30px;
+  }
+  .signIn__section .right__side .form__content button {
+    margin-bottom: 10px;
+  }
+  .signIn__section .right__side .form__content p {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  .signIn__section .right__side .form__content .text {
+    text-align: left;
+  }
+  .signIn__section .right__side .form__content .middle {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .signIn__section .left__side {
+    display: none;
+  }
+  .signIn__section .right__side {
+    width: 100%;
+  }
+  .signIn__section .right__side .form__content {
+    background: #f1f6f9;
+    width: 320px;
+    padding: 40px 20px;
+  }
+}
+/*# sourceMappingURL=signIn.css.map */
